@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun D-Map</title>
+    <link rel="stylesheet" href="./css/d-css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <div id="d-soal_dikerjakan" class="position-relative">
+            <!-- <div class="position-absolute w-100 d-flex justify-content-center">
+                <div id="d-banner_kuning" class="position-absolute text-center text-white margin-auto top-50 d-flex justify-content-center align-items-center">
+                    <b>
+                       INFORMASI TOMBOL
+                    </b>
+                </div>
+            </div> -->
+            <div class="position-absolute h-100 w-100 d-flex flex-column">
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="..." class="rounded me-2" alt="...">
+                        <strong class="me-auto">Bootstrap</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        Hello, world! This is a toast message.
+                      </div>
+                    </div>
+                  </div>
+
+                <div id="d-soal_1" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        1. Kerajaan Hindu tertua yang ada di Indonesia adalah …
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <button id="liveToastBtn" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Kutai</div>
+                            </button> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Kediri</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Sriwijaya</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Demak</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_2" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        2. Perhatikan gambar berikut!<br>
+                        Gambar tersebut adalah…<br>
+                        <img src="./img/peta/kerajaan_hindu/2_peninggalan.jpg" alt="" srcset="">
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Prasasti Kebun Kopi</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Prasasti Cianten</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Yupa</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Prasasti Jambu</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_3" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        3. Ken Arok adalah raja dari kerajaan…
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Singasari</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Majapahit</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Tarumanegara</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Mataram Kuno</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_4" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        4. Kerajaan ternate terletak di daerah…
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Jawa Timur</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Jawa Tengah</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Maluku Utara</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Sulawesi</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_5" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        5. Yang termasuk kerajaan bercorak islam adalah…
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Demak</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Tarumanegara</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Kutai</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Sriwijaya</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_6" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        6. Peninggalan kerajaan Tidore ditunjukkan oleh gambar…
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div><img src="./img/peta/kerajaan_islam/6_peninggalan.jpg" alt="" srcset=""></div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div><img src="./img/peta/kerajaan_budha/2_peninggalan.png" alt="" srcset=""></div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div><img src="./img/peta/kerajaan_hindu/7_peninggalan.jpg" alt="" srcset=""></div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div><img src="./img/peta/kerajaan_hindu/3_peninggalan.jpg" alt="" srcset=""></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_7" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        7. Raru Shima adalah ratu dari kerajaan…
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Kalingga</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Kediri</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Samudera Pasai</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Mataram</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_8" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        8. Berikut ini yang bukan peninggalan kerajaan islam adalah…
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Masjid Baiturrahman</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Masjid Demak</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Candi Prambanan</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Makam Sultan Malik As Salih</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_9" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        9. Kerajaan Tarumanegara terletk di provinsi …
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Aceh</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Jawa Tengah</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Maluku</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Jawa Barat</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="d-soal_10" class="d-form d-soal position-relative mx-auto d-flex flex-column justify-content-start align-items-start"> 
+                    <div class="d-soal_yang_dibaca">
+                        10. Prasasti Tukmas merupakan peninggalan dari kerajaan…
+                    </div>
+                    <div class="d-jawaban d-flex flex-row justify-content-start">
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">A.</div>
+                                <div>Tidore</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">B.</div>
+                                <div>Majapahit</div>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">C.</div>
+                                <div>Kalingga</div>
+                            </a> 
+                            <a href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                                <div class="d-pilihan">D.</div>
+                                <div>Tarumanegara</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="http://" class="position-absolute top-10 end-0">
+                <img id="d-btn_close" src="./img/btn_close.png" alt="" srcset="">
+            </a> -->
+            <div class="position-absolute bottom-0 w-100 d-flex justify-content-center mb-3">
+                <!-- <a href="./mulai.html" class="d-btn_medium d-flex justify-content-center">
+                    <img id="d-btn_mulai" class="" src="./img/btn_kembali.png" alt="" srcset="">
+                </a> -->
+            </div>
+            <img id="d-home_img_bg" class="" src="./img/bg_kuis_soal.png" alt="" srcset="">
+        </div>
+    </main>
+</body>
+</html>
