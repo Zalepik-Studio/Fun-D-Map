@@ -349,3 +349,108 @@ a{
 .d-status_gagal{
     background: gray;
 }
+
+@media only screen and (max-width: 1000px) {
+    /* body{
+        position: relative !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: start !important;
+        height: 100%;
+    }
+
+    #d-wrapper_screen{
+        width: 1520px;
+        height: 854px;
+        transform: scale(0.7);
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+        top: 0; 
+        align-self: start;
+    } */
+    
+    .d-btn_small_square{
+        height: 44px;
+    }
+
+    #d-btn_close{
+        height: 44px
+    }
+
+    #d-banner_kuning.d-2{
+        font-size: 24px;
+        padding: 0px 144px 12px 144px
+    }
+
+    #d-mulai .d-form, #d-informasi_tombol .d-form, .d-form{
+        margin-top: 96px;
+    }
+
+    .d-materi_detail .d-materi_konten_gambar:first-child img {
+        max-height: 196px;
+        max-width: 236px;
+    }
+
+    .d-materi_detail .d-materi_konten_gambar:last-child img {
+        max-height: 196x;
+        max-width: 236px;
+    }
+
+    .d-materi_konten{
+        font-size: 18px;
+    }
+
+    .d-materi_konten b#d-title_konten,
+    .d-materi_konten_gambar{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    a.btn_menu_form_img>div{
+        font-size: 28px;
+    }
+
+    #d-materi_menu .d-form{
+        padding: 56px 72px;
+    }
+
+    .btn_menu_form_img>img{
+        height: 128px;
+    }
+
+    .d-mulai_pertanyaan{
+        margin-right: 44px;
+        font-size: 24px;
+        padding: 36px 32px;
+    }
+
+    .d-btn_medium {
+        height: 88px;
+    }
+
+    .d-soal_yang_dibaca {
+        font-size: 24px;
+    }
+
+    .d-jawaban .d-pilihan ~ div {
+        border: 4px solid #C55A11;
+        padding: 4px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 24px;
+        margin-left: 16px;
+    }
+
+    .d-jawaban .d-pilihan {
+        font-size: 24px;
+        width: 56px;
+        height:56px;
+        border-radius: 20px;
+    }
+}
+
+#d-skor_akhir #d-banner_kuning{
+    background: url("");
+}
