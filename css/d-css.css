@@ -1,9 +1,18 @@
 body{
     margin: 0px;
+    background: url(../img/bg-wood.jpg);
+    background-size: cover;
 }
 
 body::-webkit-scrollbar{
     display: none;
+}
+
+main{
+    height: 100%;
+    max-width: 1520px;
+    max-height: 854px;
+    margin: auto;
 }
 
 a,
@@ -296,6 +305,7 @@ a{
 .d-jawaban>div>button{
     border: 0px #FFFFFF00;
     background: #FFFFFF00;
+    height: auto
 }
 
 #d-soal_dikerjakan .d-form{
@@ -321,7 +331,7 @@ a{
 }
 
 .d-hide{
-    display: none !important;
+    visibility: hidden !important;
     height: 0px;
     overflow: hidden;
     padding: 0px !important;

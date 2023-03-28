@@ -138,13 +138,12 @@ function soal10Lanjut() {
     document.getElementById("d-skor_akhir").classList.remove("d-hide");
     var d_skor = document.getElementById("d-skor_akhir_angka");
     d_skor.innerHTML = document.getElementById("d-skor").innerHTML;
-    var d_status = document.getElementById("d-status_");
-    if (d_skor >= 70){
-        d_status.innerHTML = "Lulus";
-        d_status.classList.add("d-status_success")
+    if (parseInt(d_skor.innerHTML) >= 70){
+        document.getElementById("d-status_label").innerHTML = "Lulus";
+        document.getElementById("d-status_label").classList.add("d-status_success")
     }
     else{
-        d_status.innerHTML = "Belum Lulus";
-        d_status.classList.add("d-status_gagal")
+        document.getElementById("d-status_label").innerHTML = "Belum Lulus";
+        document.getElementById("d-status_label").classList.add("d-status_gagal")
     }
 }
