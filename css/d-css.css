@@ -386,7 +386,7 @@ a{
     }
 
     #d-mulai .d-form, #d-informasi_tombol .d-form, .d-form{
-        margin-top: 96px;
+        margin-top: 84px;
     }
 
     .d-materi_detail .d-materi_konten_gambar:first-child img {
@@ -449,6 +449,15 @@ a{
         width: 56px;
         height:56px;
         border-radius: 20px;
+    }
+
+    .d-form{
+        border: 4px solid #A26330;
+        padding: 16px 28px;
+    }
+
+    .img_bg_home{
+        content: url(../img/mobile/bg_home.png) !important;
     }
 }
 
