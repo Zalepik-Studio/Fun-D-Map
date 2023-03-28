@@ -380,8 +380,9 @@ a{
     }
 
     #d-banner_kuning.d-2{
-        font-size: 24px;
-        padding: 0px 144px 12px 144px
+        font-size: 18px;
+        padding: 0px 144px 12px 144px;
+        height: 96px
     }
 
     #d-mulai .d-form, #d-informasi_tombol .d-form, .d-form{
@@ -394,7 +395,7 @@ a{
     }
 
     .d-materi_detail .d-materi_konten_gambar:last-child img {
-        max-height: 196x;
+        max-height: 196px;
         max-width: 236px;
     }
 
@@ -404,7 +405,7 @@ a{
 
     .d-materi_konten b#d-title_konten,
     .d-materi_konten_gambar{
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 700;
     }
 
