@@ -351,6 +351,11 @@ a{
 }
 
 @media only screen and (max-width: 1000px) {
+    #d-banner_kuning{
+        font-size: 24px;
+        padding-right: 132px;
+        padding-left: 132px;
+    }
     /* body{
         position: relative !important;
         display: flex !important;
@@ -456,8 +461,50 @@ a{
         padding: 16px 28px;
     }
 
+    #d-banner_home{
+        margin-top: 40px;
+        height:72px;
+        width: 80%;
+    }
+
+    #d-banner_home b{
+        font-size: 16px;
+    }
+
     .img_bg_home{
         content: url(../img/mobile/bg_home.png) !important;
+    }
+
+    .img_bg_skor{
+        content: url(../img/mobile/bg_skor.png);
+    }
+
+    .img_bg_kuis_soal{
+        content: url(../img/mobile/bg_kuis_soal.png) !important;
+    }
+
+    .img_bg_menu_materi{
+        content: url(../img/mobile/bg_menu_materi.png) !important;
+    }
+
+    .img_bg_menu{
+        content: url(../img/mobile/bg_menu.png) !important;
+    }
+
+    .img_bg_map_awal{
+        content: url(../img/mobile/bg_map_awal.png) !important;
+    }
+
+    .img_bg_materi{
+        content: url(../img/mobile/bg_materi.png) !important;
+    }
+
+    .img_bg_materi_dibuka{
+        content: url(../img/mobile/bg_materi_dibuka.png) !important;
+    }
+
+    .img_bg_menu{
+        content: url(../img/mobile/bg_menu.png) !important;
     }
 }
 
