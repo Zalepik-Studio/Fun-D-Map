@@ -8,25 +8,35 @@ window.addEventListener("resize", function(){
           // document.getElementById("screen_hp_putar").classList.add("d_putar_dulu_layarnya");
           d_notif.classList.add("d_putar_dulu_layarnya")
       }
+      else if(d_width>d_height){
+        // document.getElementById("screen_hp_putar").classList.add("d_putar_dulu_layarnya");
+        d_notif.classList.add("d_putar_dulu_layarnya")
+            }
+     }
       else{
           // document.getElementById("screen_hp_putar").classList.remove("d_putar_dulu_layarnya");
           d_notif.classList.remove("d_putar_dulu_layarnya")
       }
-      if(d_width>d_height){
-          // document.getElementById("screen_hp_putar").classList.remove("d_putar_dulu_layarnya");
-          d_notif.classList.remove("d_putar_dulu_layarnya")
-      }
-      else{
-          // document.getElementById("screen_hp_putar").classList.add("d_putar_dulu_layarnya");
-          d_notif.classList.add("d_putar_dulu_layarnya")
-      }
-    }
-    else{
-    }
-  
-    var x = document.getElementById("myBtn");
-    x.innerHTML = "Browser width: " + d_width + ", height: " + d_height + ".";
   });
+
+  
+  var d_width = window.innerWidth;
+  var d_height = window.innerHeight;
+  var d_notif = document.getElementById("screen_hp_putar")
+  if(d_width<900){
+    if(d_height>d_width){
+        // document.getElementById("screen_hp_putar").classList.add("d_putar_dulu_layarnya");
+        d_notif.classList.add("d_putar_dulu_layarnya")
+    }
+    else if(d_width>d_height){
+      // document.getElementById("screen_hp_putar").classList.add("d_putar_dulu_layarnya");
+      d_notif.classList.add("d_putar_dulu_layarnya")
+          }
+   }
+    else{
+        // document.getElementById("screen_hp_putar").classList.remove("d_putar_dulu_layarnya");
+        d_notif.classList.remove("d_putar_dulu_layarnya")
+    }
 
 
 function d_putar_audio() {
