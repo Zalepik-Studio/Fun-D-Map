@@ -1,32 +1,51 @@
-// const toastTrigger = document.getElementById('jawaban_benar_1_btn')
-// const toastLiveExample = document.getElementById('jawaban_benar_1')
 
-// if (toastTrigger) {
-// const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-// toastTrigger.addEventListener('click', () => {
-//     toastBootstrap.show()
-// })
-// }
+window.addEventListener("resize", function(){
+    var d_width = window.innerWidth;
+    var d_height = window.innerHeight;
+    var d_notif = document.getElementById("screen_hp_putar")
+    if(d_width<900){
+      if(d_height>d_width){
+          // document.getElementById("screen_hp_putar").classList.add("d_putar_dulu_layarnya");
+          d_notif.classList.add("d_putar_dulu_layarnya")
+      }
+      else{
+          // document.getElementById("screen_hp_putar").classList.remove("d_putar_dulu_layarnya");
+          d_notif.classList.remove("d_putar_dulu_layarnya")
+      }
+      if(d_width>d_height){
+          // document.getElementById("screen_hp_putar").classList.remove("d_putar_dulu_layarnya");
+          d_notif.classList.remove("d_putar_dulu_layarnya")
+      }
+      else{
+          // document.getElementById("screen_hp_putar").classList.add("d_putar_dulu_layarnya");
+          d_notif.classList.add("d_putar_dulu_layarnya")
+      }
+    }
+    else{
+    }
+  
+    var x = document.getElementById("myBtn");
+    x.innerHTML = "Browser width: " + d_width + ", height: " + d_height + ".";
+  });
 
 
-// const jawaban_salah = document.querySelectorAll('.jawaban_salah_btn');
-// const jawaban_salahtoastLiveExample = document.getElementById('jawaban_salah')
+function d_putar_audio() {
+  var x = document.getElementById("d-backsound").autoplay;
+//   document.getElementById("demo").innerHTML = x;
+}
 
-// for (var i = 0; i < jawaban_salah.length; i++) {
-// if (jawaban_salah[i]) {
-//     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(jawaban_salahtoastLiveExample)
-//     jawaban_salah[i].addEventListener('click', () => {
-//         toastBootstrap.show()
+var source = "../sound/sound_success.wav"
+var audio = document.createElement("audio");
+//
+audio.autoplay = true;
+//
+audio.load()
+audio.addEventListener("load", function() { 
+    audio.play(); 
+}, true);
+audio.src = source;
 
-//     })
-//     }
-// }
-// function myFunction() {
-//     document.getElementsByClassName('jawaban_no_1_a').disabled = true;
-//     document.getElementsByClassName('jawaban_no_1_b').disabled = true;
-//     document.getElementsByClassName('jawaban_no_1_c').disabled = true;
-//     document.getElementsByClassName('jawaban_no_1_d').disabled = true;
-// }
+
 
 function soal1Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;

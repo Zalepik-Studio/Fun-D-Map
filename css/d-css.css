@@ -511,3 +511,15 @@ a{
 #d-skor_akhir #d-banner_kuning{
     background: url("");
 }
+
+/* #screen_hp_putar{
+    display: block;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8);
+} */
+
+.d_putar_dulu_layarnya{
+    display: block !important;
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.8);
+}
