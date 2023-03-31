@@ -11,6 +11,19 @@
 </head>
 <body>
 
+        
+    <audio id="d-sound_mulai">
+        <source src="./sound/sound_success.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      
+    <script type="text/javascript"> 
+        setTimeout(function(){ 
+        document.getElementById("d-sound_mulai").play(); 
+        }, 1000) ;
+
+        console.log('your sound is begun a little while ago'); 
+        </script> 
 
 
     <div id="screen_hp_putar" class="modal fade">
