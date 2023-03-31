@@ -11,7 +11,7 @@ window.addEventListener("resize", function(){
       else if(d_width>d_height){
         // document.getElementById("screen_hp_putar").classList.add("d_putar_dulu_layarnya");
         d_notif.classList.add("d_putar_dulu_layarnya")
-            }
+        }
      }
       else{
           // document.getElementById("screen_hp_putar").classList.remove("d_putar_dulu_layarnya");
@@ -35,31 +35,26 @@ window.addEventListener("resize", function(){
    }
     else{
         // document.getElementById("screen_hp_putar").classList.remove("d_putar_dulu_layarnya");
-        d_notif.classList.remove("d_putar_dulu_layarnya")
+        // d_notif.classList.remove("d_putar_dulu_layarnya")
     }
 
 
-function d_putar_audio() {
-  var x = document.getElementById("d-backsound").autoplay;
-//   document.getElementById("demo").innerHTML = x;
-}
-
-var source = "../sound/sound_success.wav"
-var audio = document.createElement("audio");
-//
-audio.autoplay = true;
-//
-audio.load()
-audio.addEventListener("load", function() { 
-    audio.play(); 
-}, true);
-audio.src = source;
+// function d_putar_audio() {
+//   var x = document.getElementById("d-backsound").autoplay;
+// //   document.getElementById("demo").innerHTML = x;
+// }
 
 
-
+var d_sound_jawaban_benar = document.getElementById("d-sound_jawaban_benar"); 
+var d_sound_jawaban_salah = document.getElementById("d-sound_jawaban_salah");
+// document.getElementsByClassName("jawaban_salah_btn").addEventListener("click", d_sound_jawaban_salah);
+function d_sound_jawaban_salah_play() {
+    d_sound_jawaban_salah.play();
+  }
 function soal1Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
-    document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;    
+    d_sound_jawaban_benar.play(); 
 }
 
 function soal1Lanjut() {
@@ -71,6 +66,7 @@ function soal1Lanjut() {
 function soal2Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
 }
 
 function soal2Lanjut() {
@@ -82,6 +78,7 @@ function soal2Lanjut() {
 function soal3Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
 }
 
 function soal3Lanjut() {
@@ -93,6 +90,7 @@ function soal3Lanjut() {
 function soal4Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
 }
 
 function soal4Lanjut() {
@@ -104,6 +102,7 @@ function soal4Lanjut() {
 function soal5Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
 }
 
 function soal5Lanjut() {
@@ -114,6 +113,7 @@ function soal5Lanjut() {
 //===
 function soal6Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
 }
 
@@ -126,6 +126,7 @@ function soal6Lanjut() {
 function soal7Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
 }
 
 function soal7Lanjut() {
@@ -136,6 +137,7 @@ function soal7Lanjut() {
 //===
 function soal8Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
 }
 
@@ -147,6 +149,7 @@ function soal8Lanjut() {
 //===
 function soal9Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
 }
 
@@ -158,6 +161,7 @@ function soal9Lanjut() {
 //===
 function soal10Benar() {
     document.getElementById("d-skor").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
+    d_sound_jawaban_benar.play(); 
     document.getElementById("d-skor_akhir_angka").innerHTML = parseInt(document.getElementById("d-skor").innerHTML) + 10;
 }
 

@@ -100,6 +100,7 @@ main>div{
     border: 10px solid #A26330;
     padding: 24px 40px;
     border-radius: 40px;
+    z-index: 3;
 }
 
 #d-mulai .d-form,

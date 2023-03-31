@@ -10,6 +10,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <audio id="d-sound_jawaban_benar">
+    <source src="./sound/sound_success.mp3" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="d-sound_jawaban_salah">
+    <source src="./sound/sound_wrong.mp3" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
   
   <!-- Modal -->
   <div class="modal fade" id="jawaban_benar_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -407,21 +416,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_1" onclick="soal1Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Kutai</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" onclick="d_sound_jawaban_salah_play()" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Kediri</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_1" onclick="soal1Benar()" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" onclick="d_sound_jawaban_salah_play()" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Sriwijaya</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" onclick="d_sound_jawaban_salah_play()" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Demak</div>
                             </button>
@@ -437,21 +446,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Prasasti Kebun Kopi</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_2" onclick="soal2Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_2" onclick="soal2Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Prasasti Ciaruteun</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Yupa</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Prasasti Jambu</div>
                             </button>
@@ -465,21 +474,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_3" onclick="soal3Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_3" onclick="soal3Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Singasari</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Majapahit</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Tarumanegara</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Mataram Kuno</div>
                             </button>
@@ -493,21 +502,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Jawa Timur</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Jawa Tengah</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_4" onclick="soal4Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_4" onclick="soal4Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Maluku Utara</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Sulawesi</div>
                             </button>
@@ -521,21 +530,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_5" onclick="soal5Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_5" onclick="soal5Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Demak</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Tarumanegara</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Kutai</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Sriwijaya</div>
                             </button>
@@ -549,21 +558,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_6" onclick="soal6Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_6" onclick="soal6Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div><img src="./img/peta/kerajaan_islam/6_peninggalan.jpg" alt="" srcset=""></div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div><img src="./img/peta/kerajaan_budha/2_peninggalan.png" alt="" srcset=""></div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div><img src="./img/peta/kerajaan_hindu/7_peninggalan.jpg" alt="" srcset=""></div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div><img src="./img/peta/kerajaan_hindu/3_peninggalan.jpg" alt="" srcset=""></div>
                             </button>
@@ -577,21 +586,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_7" onclick="soal7Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_7" onclick="soal7Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Kalingga</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Kediri</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Samudera Pasai</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Mataram</div>
                             </button>
@@ -605,21 +614,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Masjid Baiturrahman</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Masjid Demak</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_8" onclick="soal8Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_8" onclick="soal8Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Candi Prambanan</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Makam Sultan Malik As Salih</div>
                             </button>
@@ -633,21 +642,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Aceh</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Jawa Tengah</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Maluku</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_9" onclick="soal9Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_9" onclick="soal9Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Jawa Barat</div>
                             </button>
@@ -661,21 +670,21 @@
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
                                 <div>Tidore</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
                                 <div>Majapahit</div>
                             </button> 
                         </div>
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_10" onclick="soal10Benar()" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_10" onclick="soal10Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
                                 <div>Kalingga</div>
                             </button> 
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" href="http://" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
                                 <div>Tarumanegara</div>
                             </button>
@@ -683,7 +692,7 @@
                     </div>
                 </div>
             </div>
-            <div id="d-wrap_skor" href="http://" class="position-absolute top-10 end-0">
+            <div id="d-wrap_skor" href="" class="position-absolute top-10 end-0">
                 Skor= <b><div id="d-skor">0</div></b>
             </div>
             <div class="position-absolute bottom-0 w-100 d-flex justify-content-center mb-3">
