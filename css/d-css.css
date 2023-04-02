@@ -331,6 +331,32 @@ a{
     color: #C55A11;
 }
 
+#d-timer{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 16px 4px 16px;
+    border-radius: 16px;
+    background: white;
+    border: 0px solid rgb(84, 34, 177);
+    margin: 16px;
+    right: 0;
+    margin-top: 468px !important;
+}
+
+#d-timer #d-countdown{
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+    color: black;
+    padding-top: 4px;
+}
+
+#d-timer img{
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 12px;
+}
+
 .d-hide{
     visibility: hidden !important;
     height: 0px;
@@ -523,4 +549,14 @@ a{
     display: block !important;
     opacity: 1 !important;
     background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-dialog-scrollable{
+    height: 100% !important
+}
+
+.d-waktu_habis{
+    display: block !important;
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.8) !important
 }

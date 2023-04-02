@@ -180,3 +180,29 @@ function soal10Lanjut() {
         document.getElementById("d-status_label").classList.add("d-status_gagal")
     }
 }
+
+function lihatHasil(){
+    document.getElementById("d-soal_dikerjakan").classList.add("d-hide");
+    document.getElementById("d-soal_1").classList.add("d-hide");
+    document.getElementById("d-soal_2").classList.add("d-hide");
+    document.getElementById("d-soal_3").classList.add("d-hide");
+    document.getElementById("d-soal_4").classList.add("d-hide");
+    document.getElementById("d-soal_5").classList.add("d-hide");
+    document.getElementById("d-soal_6").classList.add("d-hide");
+    document.getElementById("d-soal_7").classList.add("d-hide");
+    document.getElementById("d-soal_8").classList.add("d-hide");
+    document.getElementById("d-soal_9").classList.add("d-hide");
+    document.getElementById("d-soal_10").classList.add("d-hide");
+    document.getElementById("d-skor_akhir").classList.remove("d-hide");
+    document.getElementById("d-waktu_habis").classList.add("d-hide");
+    var d_skor = document.getElementById("d-skor_akhir_angka");
+    d_skor.innerHTML = document.getElementById("d-skor").innerHTML;
+    if (parseInt(d_skor.innerHTML) >= 70){
+        document.getElementById("d-status_label").innerHTML = "Lulus";
+        document.getElementById("d-status_label").classList.add("d-status_success")
+    }
+    else{
+        document.getElementById("d-status_label").innerHTML = "Belum Lulus";
+        document.getElementById("d-status_label").classList.add("d-status_gagal")
+    }
+}

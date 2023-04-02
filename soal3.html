@@ -21,9 +21,30 @@
   </audio>
   
   <!-- Modal -->
-  <div class="modal fade" id="jawaban_benar_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
+<div style="" class="modal fade modal-dialog-scrollable" id="d-waktu_habis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
+  <div class="modal-dialog" style="margin-top: 120px;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <strong style="font-size: 44px" class="me-auto"><img src="./img/img_timer.svg" alt="" srcset="" width="56px"></strong>
+            <strong style="font-size: 56px" class="me-auto">Waktu Habis</strong>
+            <!-- <span style="font-size: 32px;" class="text-white">+10</span> -->
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+            Sesi waktu pengerjaan kuis telah berakhir, klik tombol di bawah untuk melihat hasil pengerjaan kuis!
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="lihatHasil()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">
+            Lihat hasil
+          </button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-dialog-scrollable" id="jawaban_benar_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
         <div class="modal-header text-bg-success">
             <strong style="font-size: 44px" class="me-auto">✅</strong>
             <strong style="font-size: 56px" class="me-auto">Benar</strong>
@@ -31,7 +52,41 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Kutai</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="soal1Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
+        </div>
+    </div>
+  </div>
+</div>
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-bg-danger">
+            <strong style="font-size: 44px" class="me-auto">❌</strong>
+            <strong style="font-size: 56px" class="me-auto">Salah</strong>
+            <span style="font-size: 32px;" class="text-white"></span>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal1Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -39,27 +94,9 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header text-bg-danger">
-            <strong style="font-size: 44px" class="me-auto">❌</strong>
-            <strong style="font-size: 56px" class="me-auto">Salah</strong>
-            <span style="font-size: 32px;" class="text-white"></span>
-          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-        </div>
-        <div class="modal-body">
-            Jawaban: <b>Kutai</b>
-        </div>
-        <div class="modal-footer">
-          <button type="button" onclick="soal1Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   
-  <div class="modal fade" id="jawaban_benar_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -69,7 +106,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Prasasti Ciaruteun</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal2Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -77,7 +122,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -87,7 +132,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Prasasti Ciaruteun</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal2Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -97,7 +150,7 @@
   </div>
 
   
-  <div class="modal fade" id="jawaban_benar_3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -107,7 +160,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Singasari</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal3Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -115,7 +176,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -125,7 +186,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Singasari</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal3Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -135,7 +204,7 @@
   </div>
 
   
-  <div class="modal fade" id="jawaban_benar_4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -145,7 +214,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Maluku Utara</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal4Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -153,7 +230,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -163,7 +240,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Maluku Utara</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal4Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -173,7 +258,7 @@
   </div>
 
   
-  <div class="modal fade" id="jawaban_benar_5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -183,7 +268,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Demak</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal5Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -191,7 +284,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -201,7 +294,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Demak</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal5Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -211,7 +312,7 @@
   </div>
 
   
-  <div class="modal fade" id="jawaban_benar_6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -221,7 +322,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b><img class="d-modal_jawaban" src="./img/peta/kerajaan_islam/6_peninggalan.jpg" alt="" srcset=""></b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal6Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -229,7 +338,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -239,7 +348,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b><img class="d-modal_jawaban" src="./img/peta/kerajaan_islam/6_peninggalan.jpg" alt="" srcset=""></b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal6Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -249,7 +366,7 @@
   </div>
 
   
-  <div class="modal fade" id="jawaban_benar_7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -259,7 +376,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Kalingga</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal7Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -267,7 +392,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -277,8 +402,20 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Kalingga</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
+        <div class="modal-footer">
+          <button type="button" onclick="soal7Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
+        </div>
+      </div>
         <div class="modal-footer">
           <button type="button" onclick="soal7Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
         </div>
@@ -287,7 +424,7 @@
   </div>
 
   
-  <div class="modal fade" id="jawaban_benar_8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -297,7 +434,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Candi Prambanan</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal8Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -305,7 +450,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -315,7 +460,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Candi Prambanan</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal8Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -325,7 +478,7 @@
   </div>
 
   
-  <div class="modal fade" id="jawaban_benar_9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -335,7 +488,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Jawa Barat</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal9Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -343,7 +504,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -353,7 +514,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Jawa Barat</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal9Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -363,7 +532,7 @@
   </div>
 
   
-  <div class="modal fade" id="jawaban_benar_10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_benar_10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-success">
@@ -373,7 +542,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Kalingga</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal10Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -381,7 +558,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="jawaban_salah_10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-dialog-scrollable" id="jawaban_salah_10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-bg-danger">
@@ -391,7 +568,15 @@
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
-            Jawaban: <b>Kalingga</b>
+            <div class="fs-4"><b></b></div><br>
+            <b class="text-success"></b><br>
+            <span style="background: #00ff6228"></span><br><br>
+            <b></b><br>
+            <br><br>
+            <b></b> <br>
+            <br><br>
+            <b></b><br>
+            
         </div>
         <div class="modal-footer">
           <button type="button" onclick="soal10Lanjut()" class="btn" style="padding: 16px 32px; background: yellow; border: 4px solid #C55A11; color: maroon; box-shadow: 0px 12px 24px orange inset; font-weight: 700; font-size: 24px; border-radius: 24px;" data-bs-dismiss="modal">Soal Selanjutnya ></button>
@@ -412,27 +597,27 @@
             <div class="position-absolute h-100 w-100 d-flex flex-column">
                 <div id="d-soal_1" class="d-flex d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        1. Kerajaan Hindu tertua yang ada di Indonesia adalah …
+                        1. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
-                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_1" onclick="soal1Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
+                            <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_1" onclick="soal1Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center" data-keyboard="false" data-backdrop="static">
                                 <div class="d-pilihan">A.</div>
-                                <div>Kutai</div>
+                                <div>..</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" onclick="d_sound_jawaban_salah_play()" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Kediri</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" onclick="d_sound_jawaban_salah_play()" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Sriwijaya</div>
+                                <div>..</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_1" onclick="d_sound_jawaban_salah_play()" href="" class="jawaban_salah_btn d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Demak</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -440,29 +625,28 @@
 
                 <div id="d-soal_2" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        2. Perhatikan gambar berikut!<br>
-                        Gambar tersebut adalah…<br>
-                        <img src="./img/peta/kerajaan_hindu/2_peninggalan.jpg" alt="" srcset="">
+                        2. <br>
+                        
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div>Prasasti Kebun Kopi</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_2" onclick="soal2Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Prasasti Ciaruteun</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Yupa</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_2" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Prasasti Jambu</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -470,27 +654,27 @@
 
                 <div id="d-soal_3" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        3. Ken Arok adalah raja dari kerajaan…
+                        3. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_3" onclick="soal3Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div>Singasari</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Majapahit</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Tarumanegara</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_3" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Mataram Kuno</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -498,27 +682,27 @@
 
                 <div id="d-soal_4" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        4. Kerajaan ternate terletak di daerah…
+                        4. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div>Jawa Timur</div>
+                                <div></div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Jawa Tengah</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_4" onclick="soal4Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Maluku Utara</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_4" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Sulawesi</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -526,27 +710,27 @@
 
                 <div id="d-soal_5" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        5. Yang termasuk kerajaan bercorak islam adalah…
+                        5. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_5" onclick="soal5Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div>Demak</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Tarumanegara</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Kutai</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_5" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Sriwijaya</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -554,27 +738,27 @@
 
                 <div id="d-soal_6" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        6. Peninggalan kerajaan Tidore ditunjukkan oleh gambar…
+                        6. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_6" onclick="soal6Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div><img src="./img/peta/kerajaan_islam/6_peninggalan.jpg" alt="" srcset=""></div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div><img src="./img/peta/kerajaan_budha/2_peninggalan.png" alt="" srcset=""></div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div><img src="./img/peta/kerajaan_hindu/7_peninggalan.jpg" alt="" srcset=""></div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_6" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div><img src="./img/peta/kerajaan_hindu/3_peninggalan.jpg" alt="" srcset=""></div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -582,27 +766,27 @@
 
                 <div id="d-soal_7" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        7. Raru Shima adalah ratu dari kerajaan…
+                        7. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_7" onclick="soal7Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div>Kalingga</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Kediri</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Samudera Pasai</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_7" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Mataram</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -610,27 +794,27 @@
 
                 <div id="d-soal_8" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        8. Berikut ini yang bukan peninggalan kerajaan islam adalah…
+                        8. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div>Masjid Baiturrahman</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Masjid Demak</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_8" onclick="soal8Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Candi Prambanan</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_8" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Makam Sultan Malik As Salih</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -638,27 +822,27 @@
 
                 <div id="d-soal_9" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        9. Kerajaan Tarumanegara terletak di provinsi …
+                        9. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div>Aceh</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Jawa Tengah</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_9" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Maluku</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_9" onclick="soal9Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Jawa Barat</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
@@ -666,41 +850,54 @@
 
                 <div id="d-soal_10" class="d-flex d-hide d-form d-soal position-relative mx-auto flex-column justify-content-start align-items-start"> 
                     <div class="d-soal_yang_dibaca">
-                        10. Prasasti Tukmas merupakan peninggalan dari kerajaan…
+                        10. ...
                     </div>
                     <div class="d-jawaban d-flex flex-row justify-content-start">
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">A.</div>
-                                <div>Tidore</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">B.</div>
-                                <div>Majapahit</div>
+                                <div>...</div>
                             </button> 
                         </div>
                         <div>
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_benar_10" onclick="soal10Benar()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">C.</div>
-                                <div>Kalingga</div>
+                                <div>...</div>
                             </button> 
                             <button id="" data-bs-toggle="modal" data-bs-target="#jawaban_salah_10" onclick="d_sound_jawaban_salah_play()" href="" class="d-btn_small_square d-btn_hitam d-flex align-items-center">
                                 <div class="d-pilihan">D.</div>
-                                <div>Tarumanegara</div>
+                                <div>...</div>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="d-timer" href="" class="position-absolute top-10">
+                <img src="./img/img_timer.svg" alt="" srcset="" width="56px"><b><div id="d-countdown"><div id="values" class="values"></div></div></b>
+            </div>
             <div id="d-wrap_skor" href="" class="position-absolute top-10 end-0">
                 Skor= <b><div id="d-skor">0</div></b>
             </div>
+            <script src="./easytimer.js-master/dist/examples.min.js"> </script>
+            <script>
+              // const element = document.getElementById("demo");
+              setInterval(function() {
+                  var d_timer = document.getElementById("values").innerHTML;
+                if (d_timer == "Selesai"){
+                  document.getElementById("d-waktu_habis").classList.add("d-waktu_habis")
+                }
+              }, 1000);
+            </script>
             <div class="position-absolute bottom-0 w-100 d-flex justify-content-center mb-3">
                 <!-- <a href="./mulai.html" class="d-btn_medium d-flex justify-content-center">
                     <img id="d-btn_mulai" class="" src="./img/btn_kembali.png" alt="" srcset="">
                 </a> -->
             </div>
-            <img id="d-home_img_bg" class="img_bg_kuis_soal" src="./img/bg_kuis_soal.png" alt="" srcset="">
+            <img id="d-home_img_bg" class="img_bg_kuis_soal" src="./img/bg_kuis_soal_3.png" alt="" srcset="">
         </div>
 
         
@@ -724,7 +921,7 @@
                     </div>
                     </div>
                     <div class="d-flex flex-row">
-                        <a class="btn_menu_form_img mb-3" href="./soal.html">
+                        <a class="btn_menu_form_img mb-3" href="./soal1.html">
                             <div class="" style="background: #c00000;">
                                 Coba Lagi
                             </div>
