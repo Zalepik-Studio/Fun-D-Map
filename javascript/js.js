@@ -210,13 +210,13 @@ function lihatHasil(){
 function btn_kuis_selesai(){
     document.getElementById("d-home").classList.remove("d-hide");
     document.getElementById("d-skor_akhir").classList.add("d-hide");
-    document.getElementById("d-sound_jawaban_benar").src = "../sound/salam/2.mp3";
+    document.getElementById("d-sound_jawaban_benar").src = "./sound/salam/2.mp3";
     document.getElementById("d-sound_jawaban_benar").load();
     document.getElementById("d-sound_jawaban_benar").play();
 }
 
 function btn_salam_pembuka(){
-    document.getElementById("d-sound_mulai").src = "../sound/salam/1.mp3";
+    document.getElementById("d-sound_mulai").src = "./sound/salam/1.mp3";
     document.getElementById("d-sound_mulai").load();
     document.getElementById("d-sound_mulai").play();
     document.getElementById("d-salam_pembuka").classList.add("d-hide");
